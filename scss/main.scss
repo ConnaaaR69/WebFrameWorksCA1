@@ -19,6 +19,13 @@ $cust-colors: (
     "light": #F6F9FF,
 )!default;
 
+$heading-sizes: (
+    1: 36,
+    2: 30,
+    3: 24,
+    4: 18,
+)
+
 //font overrides
 $font-family-base: Space Grotesk, sans-serif;
 $display-font-weight: 700;
@@ -33,7 +40,11 @@ $display-emphasis-font-weight: 400;
 }
 
 .gradient {
-    background: linear-gradient(90deg, rgba(207, 250, 254, 0.405) 0%, rgba(224, 242, 254, 0.75) 100%), #FFFFFF;;
+    background: linear-gradient(90deg, rgba(207, 250, 254, 0.54) 0%, rgbargba(224, 242, 254, 1) 100%), #FFFFFF;;
+}
+
+.blur {
+    backdrop-filter: blur(10px);
 }
 
 .display-emphasis {
@@ -55,10 +66,17 @@ $display-emphasis-font-weight: 400;
     border-radius: 50%;
 }
 
-//maps
-$theme-colors: map-merge($theme-colors, $cust-colors);
 
+
+
+//---maps---
+
+//colours
+$theme-colors: map-merge($theme-colors, $cust-colors);
 $theme-colors: map-remove($theme-colors, "danger", "success", "info", "warning");
+
+//fonts
+$font-sizes: map-merge($font-sizes, $heading-sizes);
 
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
