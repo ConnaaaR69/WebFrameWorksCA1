@@ -8,7 +8,11 @@
 }
 
 .gradient {
-  background: linear-gradient(90deg, rgba(207, 250, 254, 0.405) 0%, rgba(224, 242, 254, 0.75) 100%), #FFFFFF;
+  background: linear-gradient(90deg, rgba(207, 250, 254, 0.54) 0%, rgbargba(224, 242, 254, 1) 100%), #FFFFFF;
+}
+
+.blur {
+  backdrop-filter: blur(10px);
 }
 
 .display-emphasis {
@@ -31,6 +35,11 @@
   width: 800px;
   height: 800px;
   border-radius: 50%;
+}
+
+.hero-outline {
+  outline: 3px solid #0876DD;
+  outline-offset: 1rem;
 }
 
 /*!
@@ -7744,19 +7753,19 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: 36 !important;
 }
 
 .fs-2 {
-  font-size: calc(1.325rem + 0.9vw) !important;
+  font-size: 30 !important;
 }
 
 .fs-3 {
-  font-size: calc(1.3rem + 0.6vw) !important;
+  font-size: 24 !important;
 }
 
 .fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: 18 !important;
 }
 
 .fs-5 {
@@ -10583,20 +10592,6 @@ textarea.form-control-lg {
   }
   .text-xxl-center {
     text-align: center !important;
-  }
-}
-@media (min-width: 1200px) {
-  .fs-1 {
-    font-size: 2.5rem !important;
-  }
-  .fs-2 {
-    font-size: 2rem !important;
-  }
-  .fs-3 {
-    font-size: 1.75rem !important;
-  }
-  .fs-4 {
-    font-size: 1.5rem !important;
   }
 }
 @media print {

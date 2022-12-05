@@ -24,7 +24,7 @@ $heading-sizes: (
     2: 30,
     3: 24,
     4: 18,
-)
+);
 
 //font overrides
 $font-family-base: Space Grotesk, sans-serif;
@@ -64,6 +64,11 @@ $display-emphasis-font-weight: 400;
     width: 800px;
     height: 800px;
     border-radius: 50%;
+}
+
+.hero-outline{
+    outline: 3px solid #0876DD;
+    outline-offset: 1rem;
 }
 
 
