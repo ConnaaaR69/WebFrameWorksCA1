@@ -27,6 +27,15 @@ $display-emphasis-font-family: Lobster, sans-serif;
 $display-emphasis-font-weight: 400;  
 
 //custom classes
+.card-image-top {
+    max-height: 277px;
+    object-fit: cover;
+}
+
+.gradient {
+    background: linear-gradient(90deg, rgba(207, 250, 254, 0.405) 0%, rgba(224, 242, 254, 0.75) 100%), #FFFFFF;;
+}
+
 .display-emphasis {
     font-family: $display-emphasis-font-family;
     font-weight: $display-emphasis-font-weight;
