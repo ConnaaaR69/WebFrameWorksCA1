@@ -12,9 +12,9 @@
 
 $cust-colors: (
     "primary": #0876DD,
-    "primary-light": #E0F2FE,
+    "primary-light": #e0f2fe,
     "secondary": #29D2D3,
-    "secondary-light": #CFFAFE,
+    "secondary-light": #cffafe,
     "dark": #111827,
     "light": #F6F9FF,
 )!default;
@@ -25,6 +25,10 @@ $heading-sizes: (
     3: 24,
     4: 18,
 );
+$white-glass: rgba(255, 255, 255, 0.7);
+
+$card-bg: $white-glass;
+
 
 //font overrides
 $font-family-base: Space Grotesk, sans-serif;
@@ -44,7 +48,7 @@ $display-emphasis-font-weight: 400;
 }
 
 .blur {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
 }
 
 .display-emphasis {
@@ -54,16 +58,10 @@ $display-emphasis-font-weight: 400;
 .hide-overflow-x {
     overflow-x: hidden;
 }
-.border-pos{
-    left: -1%;
-    top: 39%;
-    width: 87%;
-    height: 27%;
-}
-.circle {
-    width: 800px;
-    height: 800px;
-    border-radius: 50%;
+
+.circle{
+	background: url('/images/circle.svg') 100% 0% no-repeat, url('/images/circle-primary.svg') -100% 95% no-repeat;
+    background-size: 70%, 90%;
 }
 
 .hero-outline{
@@ -71,11 +69,7 @@ $display-emphasis-font-weight: 400;
     outline-offset: 1rem;
 }
 
-
-
-
 //---maps---
-
 //colours
 $theme-colors: map-merge($theme-colors, $cust-colors);
 $theme-colors: map-remove($theme-colors, "danger", "success", "info", "warning");
