@@ -67,7 +67,13 @@ $display-emphasis-font-weight: 400;
 .hero-outline{
     outline: 3px solid #0876DD;
     outline-offset: 1rem;
+
+    &:hover{
+        outline: 3px solid #cffafe; 
+    }
 }
+
+
 
 //---maps---
 //colours
