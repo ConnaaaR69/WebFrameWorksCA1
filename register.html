@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+    <head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<link rel="stylesheet" href="css/main.css">
-		<script src="/js/app.js"></script>
-		<title>Concert</title>
+		<title>Login</title>
 	</head>
-	<body class="circle">
-
-	<!-- Navigation -->
-	<div class="container-md ">
+<body class="hide-overflow-x circle">
+    <div class="container-md">
+		<div class="row">
 			<nav class="navbar navbar-expand-lg ">
 				<button
 					class="navbar-toggler"
@@ -43,7 +41,6 @@
 					</li>
 				</ul>
 				<div class="d-flex gap-1">
-					<a href="login.html" class="btn btn-secondary text-light pe-2">Log in<i class="bi bi-box-arrow-in-right"></i></a>
 					<div class="d-flex btn btn-secondary text-light nav-item dropdown">
 						<a href="#" class="nav-link dropdown-toggle" role="button">Your events</a>
 						<ul class="dropdown-menu">
@@ -56,28 +53,38 @@
 					</div>
 				</div>
 			</nav>
-            <div class="row">
-                <div class="col-xl-6 card-body mt-5 p-2 bg-opacity-25 rounded-4 border border-primary-light blur">
-                    <div class="row">
-                        <div class="col-xl-8 ">
-                            <img class="img-fluid rounded-4" src="/images/elizeu-dias-aZ3qiq1eTRk-unsplash.jpg" alt="singer singing on stage">
-                        </div>
-                        <div class="col-xl-4 px-4 d-flex flex-column justify-content-evenly">
-                            <h1 class="fw-bold mt-3">Event name</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Velit sit id dictumst suspendisse quam in vel quis urna. Ut in sapien lacus consectetur. Quisque semper porttitor in hendrerit lorem lacus nec. Dolor velit nunc iaculis pharetra elementum.</p>
-                            <div class="d-inline-flex gap-3 flex-column">
-                                <h2>Price: €45</h2>
-                                <h2>Distance: 15km</h2>
-                                <h2>Venue: 3Arena</h2>
-                            </div>
-                            <a href="cart.html" class="btn mt-3 btn-primary">Buy Now</a>
-                        </div>
-                        
-                    </div>
-                  
-                </div>
-            </div>
+
+		</div>
+		<div class="row">
+			<div class="col-md-5 p-5 card-body mx-auto mt-5 bg-opacity-50 bg-light rounded-4 border border-primary-light blur">
+				<h1 class="text-center fw-bold">Welcome!</h1>
+				<p class="text-center lead">Ready to find awesome events? Sign up below to begin.</p>
+				<div class="d-flex flex-column align-items-center">
+					<form class="d-grid col-md-8 border-bottom py-5">
+						<div class="mb-3">
+							<label for="email" class="form-label">Email address</label>
+							<input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+						  </div>
+						  <div class="mb-3">
+							<label for="Password" class="form-label">Password</label>
+							<input type="password" class="form-control" id="Password">
+						  </div>
+						  <div class="mb-3">
+							<label for="ConfirmPassword" class="form-label">Confirm Password</label>
+							<input type="password" class="form-control" id="ConfirmPassword">
+						  </div>
+						  <button class="btn btn-primary mt-3" type="button">Sign Up</button>
+
+					</form>
+					<form class="d-grid col-md-8 py-5">
+						
+						  <button class="btn btn-light " type="button"><i class="bi bi-apple"></i> Sign up with Apple</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	</body>
+</body>
 </html>
