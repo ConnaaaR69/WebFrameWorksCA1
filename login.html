@@ -60,23 +60,26 @@
 				<h1 class="text-center fw-bold">Welcome!</h1>
 				<p class="text-center lead">Ready to find awesome events? Login below to begin.</p>
 				<div class="d-flex flex-column align-items-center">
-					<form class="d-grid col-md-8 border-bottom py-5">
-						<div class="mb-3">
+					<form action="index.html" class="d-grid col-8 border-bottom py-5 gap-2">
+						
 							<label for="email" class="form-label">Email address</label>
 							<input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
-						  </div>
-						  <div class="mb-3">
+					
+						  
 							<label for="Password" class="form-label">Password</label>
 							<input type="password" class="form-control" id="Password">
-						  </div>
-						  <button class="btn btn-primary mt-3" type="button">Login</button>
+				
+						  <button class="btn btn-primary mt-3" type="submit">Login</button>
 
 					</form>
-					<form class="d-grid col-md-8 py-5">
+					<form class="d-grid col-8 py-5" action="index.html">
 						
-						  <button class="btn btn-light border border-dark" type="button"><i class="bi bi-apple"></i> Login with Apple</button>
+						  <button class="btn btn-light border border-dark" type="submit"><i class="bi bi-apple"></i> Login with Apple</button>
 
 					</form>
+					
+					<a class="text-dark" href="register.html">Don't have an account?</a>
+					
 				</div>
 			</div>
 		</div>

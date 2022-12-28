@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 
-@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
 @import "../node_modules/bootstrap/scss/functions";
 // Edit Custom Variables here.
 @import "../node_modules/bootstrap/scss/_variables.scss";
@@ -25,11 +25,11 @@ $heading-sizes: (
     3: 24,
     4: 18,
 );
-$white-glass: rgba(255, 255, 255, 0.8);
 
+$white-glass: rgba(255, 255, 255, 0.5);
 $card-bg: $white-glass;
 
-
+$blur: 5px;
 //font overrides
 $font-family-base: Space Grotesk, sans-serif;
 $display-font-weight: 700;
@@ -61,14 +61,17 @@ $display-emphasis-font-weight: 400;
     background: linear-gradient(90deg, rgba(207, 250, 254, 0.54) 0%, rgba(224, 242, 254, 1) 100%), #FFFFFF;
 }
 
+.blur {
+  position: relative;
+  overflow: hidden;
+  @include backdrop-blur($blur);
+}
 
-  
-  .blur {
-    position: relative;
-    overflow: hidden;
-    @include backdrop-blur(5px);
-  }
-
+.card-body-blur {
+  @extend .card-body;
+  backdrop-filter: blur($blur);
+}
+@import "../node_modules/bootstrap/scss/_card.scss";
 // .blur {
 //     backdrop-filter: blur(6px);
 
