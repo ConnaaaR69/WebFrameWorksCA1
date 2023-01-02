@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 
-@import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
 @import "../node_modules/bootstrap/scss/functions";
 // Edit Custom Variables here.
 @import "../node_modules/bootstrap/scss/_variables.scss";
@@ -72,6 +71,7 @@ $display-emphasis-font-weight: 400;
   backdrop-filter: blur($blur);
 }
 @import "../node_modules/bootstrap/scss/_card.scss";
+
 // .blur {
 //     backdrop-filter: blur(6px);
 
@@ -98,20 +98,19 @@ $display-emphasis-font-weight: 400;
     outline-offset: 1rem;
 
     &:hover{
-        outline: 3px solid #cffafe; 
+        outline: 3px solid #29D2D3; 
     }
 }
 
 
 
-//---maps---
+//---Maps---
 //colours
 $theme-colors: map-merge($theme-colors, $cust-colors);
 $theme-colors: map-remove($theme-colors, "danger", "success", "info", "warning");
 
 //fonts
 $font-sizes: map-merge($font-sizes, $heading-sizes);
-
-
+@import "/node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
