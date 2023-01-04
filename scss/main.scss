@@ -111,6 +111,6 @@ $theme-colors: map-remove($theme-colors, "danger", "success", "info", "warning")
 
 //fonts
 $font-sizes: map-merge($font-sizes, $heading-sizes);
-@import "/node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 

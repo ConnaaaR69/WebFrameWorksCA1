@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<link rel="stylesheet" href="css/main.css">
-		<title>Tickets - Sign Up</title>
+		<title>Tickets - Login</title>
 	</head>
 <body class="hide-overflow-x circle">
     <div class="container-md">
@@ -41,8 +41,9 @@
 					</li>
 				</ul>
 				<div class="d-flex gap-1">
-					<a href="login.html" class="btn btn-secondary text-light pe-2">Log in<i class="bi bi-box-arrow-in-right"></i></a>
+                    <a href="login.html" class="btn btn-secondary text-light pe-2">Log in<i class="bi bi-box-arrow-in-right"></i></a>
 					<div class="d-flex btn btn-secondary text-light nav-item dropdown">
+                        
 						<a href="#" class="nav-link dropdown-toggle" role="button">Your events</a>
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="#">Action</a></li>
@@ -58,44 +59,41 @@
 		</div>
 		<div class="row">
 			<div class="col-md-5 p-5 card-body mx-auto mt-5 bg-opacity-50 bg-light rounded-4 border border-primary-light blur">
-				<h1 class="text-center fw-bold">Welcome!</h1>
-				<p class="text-center lead">Ready to find awesome events? Sign up below to begin.</p>
+				<h1 class="text-center fw-bold">Contact us!</h1>
+				<p class="text-center lead"> Have something to say? Let us know in the form below and we'll get back to you.</p>
 				<div class="d-flex flex-column align-items-center">
-					<form class="d-grid col-8 border-bottom py-5">
-						<div class="mb-3">
+					<form action="index.html" class="d-grid col-8 py-5 gap-2">
+                            <label for="name" class="form-label">Name</label>
+							<input type="name" class="form-control" id="name">
+
 							<label for="email" class="form-label">Email address</label>
 							<input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
-						  </div>
-						  <div class="mb-3">
-							<label for="Password" class="form-label">Password</label>
-							<input type="password" class="form-control" id="Password">
-						  </div>
-						  <div class="mb-3">
-							<label for="ConfirmPassword" class="form-label">Confirm Password</label>
-							<input type="password" class="form-control" id="ConfirmPassword">
-						  </div>
-						  <button class="btn btn-primary mt-3" type="button">Sign Up</button>
+					
+                            <label for="floatingTextarea2">Comments</label>
+                            <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                            
+                              
 
+						  
+							
+				
+						  <button class="btn btn-primary mt-3" type="submit">Login</button>
 					</form>
-					<form class="d-grid col-8 py-5">
-						
-						  <button class="btn btn-light border border-dark " type="button"><i class="bi bi-apple"></i> Sign up with Apple</button>
-
-					</form>
-					<a class="text-dark" href="login.html">Already have an account?</a>
+					
+					
 				</div>
 			</div>
 		</div>
-		<footer class="py-3 my-4">
-			<ul class="nav justify-content-center border-bottom pb-3 mb-3">
-			  <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-			  <li class="nav-item"><a href="categories.html" class="nav-link px-2 text-muted">Categories</a></li>
-			  <li class="nav-item"><a href="cart.html" class="nav-link px-2 text-muted">Cart</a></li>
-			  <li class="nav-item"><a href="register.html" class="nav-link px-2 text-muted">Register</a></li>
-			  <li class="nav-item"><a href="login.html" class="nav-link px-2 text-muted">login</a></li>
-			</ul>
-			<p class="text-center text-muted">© 2022 Company, Inc</p>
-		  </footer>
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+              <li class="nav-item"><a href="categories.html" class="nav-link px-2 text-muted">Categories</a></li>
+              <li class="nav-item"><a href="cart.html" class="nav-link px-2 text-muted">Cart</a></li>
+              <li class="nav-item"><a href="register.html" class="nav-link px-2 text-muted">Register</a></li>
+              <li class="nav-item"><a href="login.html" class="nav-link px-2 text-muted">login</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2022 Company, Inc</p>
+          </footer>
 	</div>
 
 	<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
