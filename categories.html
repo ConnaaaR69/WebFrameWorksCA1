@@ -145,7 +145,7 @@
 			<!-- SplideJS carousel -->
 			<div class="splide" id="sports">
 				<div class="splide__track">
-					<ul class="splide__list">
+					<ul class="splide__list ">
 						<li class="splide__slide col-md-4 m-2">
 							<div class="card mt-2">
 								<img class="card-image-top img-fluid" src="images/connor-coyne-OgqWLzWRSaI-unsplash.jpg" alt="Footballer puts boot on football">
@@ -276,17 +276,43 @@
 		var concerts = new Splide('#concerts', {
 				type: 'loop',
 				perPage: 3,
+				
 				rewind: true,
-			});
+				breakpoints: {
+					1024: {
+					perPage: 2,
+					},
+					600: {
+					perPage: 1,
+					},
+			},
+		});
 			var sports = new Splide('#sports', {
 				type: 'loop',
+				
 				perPage: 3,
 				rewind: true,
+				breakpoints: {
+					1024: {
+					perPage: 2,
+					},
+					600: {
+					perPage: 1,
+					},
+				},
 			});
 			var festivals = new Splide('#festivals', {
 				type: 'loop',
 				perPage: 3,
 				rewind: true,
+				breakpoints: {
+					1024: {
+					perPage: 2
+					},
+					600: {
+					perPage: 1,
+					},
+				},
 			});
 
 			concerts.mount();
