@@ -47,6 +47,7 @@ $display-emphasis-font-weight: 400;
       bottom: 0;
       z-index: -1;
       backdrop-filter: blur($amount);
+      -webkit-backdrop-filter: blur($amount);
     }
   }
 
@@ -64,6 +65,7 @@ $display-emphasis-font-weight: 400;
   position: relative;
   overflow: hidden;
   @include backdrop-blur($blur);
+  -webkit-backdrop-filter: blur($blur);
 }
 
 .card-body-blur {
