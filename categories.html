@@ -272,52 +272,7 @@
 
 	<script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
 
-	<script>
-		var concerts = new Splide('#concerts', {
-				type: 'loop',
-				perPage: 3,
-				
-				rewind: true,
-				breakpoints: {
-					1024: {
-					perPage: 2,
-					},
-					600: {
-					perPage: 1,
-					},
-			},
-		});
-			var sports = new Splide('#sports', {
-				type: 'loop',
-				
-				perPage: 3,
-				rewind: true,
-				breakpoints: {
-					1024: {
-					perPage: 2,
-					},
-					600: {
-					perPage: 1,
-					},
-				},
-			});
-			var festivals = new Splide('#festivals', {
-				type: 'loop',
-				perPage: 3,
-				rewind: true,
-				breakpoints: {
-					1024: {
-					perPage: 2
-					},
-					600: {
-					perPage: 1,
-					},
-				},
-			});
-
-			concerts.mount();
-			sports.mount();
-			festivals.mount();
+	<script src="/js/carousels.js">
 	</script>
 	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	</body>
